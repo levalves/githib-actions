@@ -1,1 +1,1 @@
-# githib-actions
+# github-actions
