@@ -11,7 +11,7 @@ jobs:
   
   deploy-dev:
     runs-on: ubuntu-latest
-    environment:
+    env:
       name: dev
       url: 'https://www.db1.com.br/'
     needs: build
@@ -21,7 +21,7 @@ jobs:
 
   deploy-hmg:
     runs-on: ubuntu-latest
-    environment:
+    env:
       name: hmg
       url: 'db1.com.br'
     needs:   deploy-dev
