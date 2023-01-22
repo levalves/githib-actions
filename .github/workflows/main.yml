@@ -31,7 +31,7 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: prd
-    needs:  deploy-dev
+    needs:  deploy-hmg
     steps:
       - name: Run a online Script - PRD
         run:  echo Deploy PRD  
