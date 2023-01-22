@@ -1,4 +1,4 @@
-name: pipeline-ci-cd
+name: Pipeline-CI-CD
 on:
   workflow_dispatch:
 
