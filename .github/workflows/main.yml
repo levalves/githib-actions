@@ -7,34 +7,34 @@ jobs:
     runs-on:  ubuntu-latest
     steps:
       - name: Run a online Script
-        run: echo Hello, World!
+        run:  echo Hello, World!
   
   deploy-dev:
     runs-on: ubuntu-latest
     env:
       name: dev
       url: 'https://www.db1.com.br/'
-    needs: build
+    needs:  build
     steps:
       - name: Run a online Script - DEV
-        run: echo Deploy DEV
+        run:  echo Deploy DEV
 
   deploy-hmg:
     runs-on: ubuntu-latest
     env:
       name: hmg
       url: 'db1.com.br'
-    needs:   deploy-dev
+    needs:  deploy-dev
     steps:
       - name: Run a online Script - HMG
-        run: echo Deploy HMG  
+        run:  echo Deploy HMG  
 
   deploy-prd:
     runs-on: ubuntu-latest
     environment:
       name: prd
-      url: 'db1.com.br'
-    needs:   deploy-hmg
+      url:  'db1.com.br'
+    needs:  deploy-dev
     steps:
       - name: Run a online Script - PRD
-        run: echo Deploy PRD  
+        run:  echo Deploy PRD  
