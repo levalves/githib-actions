@@ -1,4 +1,4 @@
-name: LevalvesPipeline
+name: PrimeiraPipeLine
 on:
   workflow_dispatch:
 
@@ -11,7 +11,7 @@ jobs:
   
   deploy-dev:
     runs-on: ubuntu-latest
-    env:
+    environment:
       name: dev
     needs:  build
     steps:
@@ -20,7 +20,7 @@ jobs:
 
   deploy-hmg:
     runs-on: ubuntu-latest
-    env:
+    environment:
       name: hmg
     needs:  deploy-dev
     steps:
