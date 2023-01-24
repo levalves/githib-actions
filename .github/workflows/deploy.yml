@@ -12,7 +12,7 @@ jobs:
         uses: actions/upload-artifact@v1
         with:
           name: terraform
-          path: ${{ github.workspace }}//appservice
+          path: ${{ github.workspace }}/appservice
 
 
 
