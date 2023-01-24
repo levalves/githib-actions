@@ -1,4 +1,4 @@
-name: PrimeiraPipeLine
+name: DepployTerraform
 on:
   workflow_dispatch:
 
